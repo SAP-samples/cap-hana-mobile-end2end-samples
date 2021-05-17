@@ -30,6 +30,31 @@ This repository is structured in its single projects, where each project holds i
 
 ## The Projects
 
+### The Advocates Service
+The Advocates Service is a Node.js based SAP Cloud Application Programming Model project which exposes endpoints for OData V2/v4 & REST. The persistence of the Advocates Server is setup in a way that it uses the SAP HANA Cloud on SAP BTP. The project can be build as MTAR and deployed to the SAP BTP, Cloud Foundry runtime.
+
+**Build the project:**
+In the root of the project run:
+* npm install
+* cds build
+* cds watch (for local testing)
+
+**Deploy the project:**
+Make sure to have installed the MTB command line interface:
+* mtb build
+* cf deploy <path-to-mtar> (make sure to be logged into CF first)
+
+### The Advocates App
+The Advocates App is an Xcode project and needs minimal setup to be build. Please be aware that you need a MacOS system in order to develop for iOS.
+1. Change the development team to something valid
+2. Make sure the project gets signed for development
+3. Create a new Mobile Project on SAP Mobile Services
+4. Change the authentication details via the `ConfigurationProvider.plist` file. You can find the needed information in your SAP Mobile Services account.
+5. Change the `AppParameters.plist` to match your Application Identifier and has the correct Destination set. You can find the needed information in your SAP Mobile Services account.
+
+**Set-up the SAP Mobile Services app**
+In order to use SAP Mobile Services and its features you need to create the Advocates App in your account and make the needed changes to the Xcode project itself to point to the correct cloud configuration.
+
 
 
 ## Requirements
@@ -50,7 +75,7 @@ If you need guidance on setting up VS Code for Cloud Application Programming mod
 * https://blogs.sap.com/2020/11/10/vscode-development-for-sap-cloud-application-programming-model-using-remote-wsl/
 
 #### Xcode
-The iOS Advocates App is being implemented with Apple Xcode. To develop native iOS apps you need a machine runnning MacOS, for this project the following versions are used:
+The iOS Advocates App is being implemented with Apple Xcode. To develop native iOS apps you need a machine runnning MacOS, for this project the following version is used:
 
 * [Xcode Version 12.5 (12E262) or later](https://developer.apple.com/xcode/)
 
@@ -80,14 +105,11 @@ Throughout the instructions in this repository, the place where you forked this 
 
 None at the time of writing.
 
-
 ## How to obtain support
 
 [Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
  
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
-
-## Contributing
 
 ## License
 Copyright (c) 2021 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
