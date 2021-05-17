@@ -6,20 +6,22 @@ This repository contains the CAP as well as the native iOS app for the End2End e
 - [Overview](#overview)
 - [The Projects](#the-projects)
   - [Advocates Service CAP Service](#advocates-service-cap-service)
+    - [Build the Project](#build-the-project)
+    - [Deploy the Project](#deploy-the-project)
   - [Advocates App](#advocates-app)
+    - [SAP Mobile Services App Config](#sap-mobile-services-app-config)
+    - [Changes to the Xcode Project](#changes-to-the-xcode-project)
 - [Requirements](#requirements)
   - [A development environment](#a-development-environment)
-    - [Visual Studio Code](#vs-code)
+    - [Visual Studio Code](#visual-studio-code)
     - [Xcode](#xcode)
-  - [An SAP BTP trial account](#an-sap-cloud-platform-trial-account)
+  - [An SAP BTP trial account](#an-sap-btp-trial-account)
     - [Trial account](#trial-account)
     - [Cloud Foundry environment](#cloud-foundry-environment)
 - [Download and installation](#download-and-installation)
 - [Known issues](#known-issues)
 - [How to obtain support](#how-to-obtain-support)
-- [Contributing](#contributing)
 - [License](#license)
-
 
 ## Overview
 The Advocates Service is a CAP service being deployed on SAP BTP, Cloud Foundry runtime with a persistence connection to the SAP HANA Cloud. The service itself is holding information about the some Developer Advocates with all the information about the advocates being relevant to its community.
@@ -30,31 +32,53 @@ This repository is structured in its single projects, where each project holds i
 
 ## The Projects
 
-### The Advocates Service
+### Advocates Service CAP Service
 The Advocates Service is a Node.js based SAP Cloud Application Programming Model project which exposes endpoints for OData V2/v4 & REST. The persistence of the Advocates Server is setup in a way that it uses the SAP HANA Cloud on SAP BTP. The project can be build as MTAR and deployed to the SAP BTP, Cloud Foundry runtime.
 
-**Build the project:**
+#### Build the Project
 In the root of the project run:
 * npm install
 * cds build
 * cds watch (for local testing)
 
-**Deploy the project:**
+#### Deploy the Project
 Make sure to have installed the MTB command line interface:
 * mtb build
 * cf deploy <path-to-mtar> (make sure to be logged into CF first)
 
-### The Advocates App
+### Advocates App
 The Advocates App is an Xcode project and needs minimal setup to be build. Please be aware that you need a MacOS system in order to develop for iOS.
+
+#### SAP Mobile Services App Config
+In order to use SAP Mobile Services and its features you need to create the Advocates App in your account and make the needed changes to the Xcode project itself to point to the correct cloud configuration.
+
+1. Create a new application cloud configuration
+
+![Mobile Services Setup](https://github.com/SAP-samples/advocates-end2end-sample/blob/main/screenshots/ms_setup.png)
+
+2. Set the wanted mobile features. If you want to use **Mobile Offline Access** you need to point the destination to the V2 service endpoint (At the point of creation the Offline OData is not fully supported for OData V4).
+
+![Mobile Services Setup - Featureas](https://github.com/SAP-samples/advocates-end2end-sample/blob/main/screenshots/ms_setup_2.png)
+
+3. Create the Destination for the service endpoint
+
+![Mobile Services Setup - Destination](https://github.com/SAP-samples/advocates-end2end-sample/blob/main/screenshots/ms_setup_3.png)
+
+4. Point to the service endpoint
+
+![Mobile Services Setup - Endpoint](https://github.com/SAP-samples/advocates-end2end-sample/blob/main/screenshots/ms_setup_4.png)
+
+#### Changes to the Xcode Project
 1. Change the development team to something valid
 2. Make sure the project gets signed for development
 3. Create a new Mobile Project on SAP Mobile Services
 4. Change the authentication details via the `ConfigurationProvider.plist` file. You can find the needed information in your SAP Mobile Services account.
+
+![Configuration Provider](https://github.com/SAP-samples/advocates-end2end-sample/blob/main/screenshots/configurationProvider.png)
+
 5. Change the `AppParameters.plist` to match your Application Identifier and has the correct Destination set. You can find the needed information in your SAP Mobile Services account.
 
-**Set-up the SAP Mobile Services app**
-In order to use SAP Mobile Services and its features you need to create the Advocates App in your account and make the needed changes to the Xcode project itself to point to the correct cloud configuration.
-
+You can find the needed information here:
 
 
 ## Requirements
@@ -63,7 +87,7 @@ Component-specific requirements are to be found in the respective READMEs, but t
 
 ### A development environment
 
-#### Visual Studio Code / SAP Business Application Studio
+#### Visual Studio Code
 The Advocates Service is being implemented with the help of Visual Studio Code, you can also use the SAP Business Application Studio for implementation or replica of the project. 
 
 The benefit of using SAP Business Application Studio in comparisson to Visual Studio Code is that your development environment is fully setup.
