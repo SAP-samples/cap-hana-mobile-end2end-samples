@@ -4,6 +4,8 @@ This repository contains the CAP as well as the native iOS app for the End2End e
 **Contents**
 
 - [Overview](#overview)
+  - [Blog Post Series](#blog-post-series)
+  - [SAP Tech Bytes Series](#sap-tech-bytes-series)
 - [The Projects](#the-projects)
   - [Advocates Service CAP Service](#advocates-service-cap-service)
     - [Build the Project](#build-the-project)
@@ -29,6 +31,15 @@ The Advocates Service is a CAP service being deployed on SAP BTP, Cloud Foundry 
 The service is companioned by an Advocates App. This app is written in Swift and uses the SAP BTP SDK for iOS frameworks for data consumption and security. With a mixed UI approach between SwiftUI and UIKit the app code represents a modern approach of native app development.
 
 This repository is structured in its single projects, where each project holds its own purpose. The repository holds all necessary code to run the End2End example of the Advocates Service.
+
+### Blog Post Series
+* [The End2End Journey: Advocates Service – An Introduction](https://blogs.sap.com/2021/04/30/the-end2end-journey-advocates-service-an-introduction/)
+* [The End2End Journey: Advocates Service – CAP Service, OData V2/4 & REST in One single Project](https://blogs.sap.com/2021/05/06/the-end2end-journey-advocates-service-cap-service-odata-v2-4-rest-in-one-single-project/)
+* [The End2End Journey: Advocates Service – Advocates App with AppGyver](https://blogs.sap.com/2021/05/17/the-end2end-journey-advocates-service-advocates-app-with-appgyver/)
+
+### SAP Tech Bytes Series
+* [Advocates Service – CAP Service, OData V2/4 & REST in One single Project](https://youtu.be/LocKpyv2m8Y)
+* [Advocates Service - Advocates App with AppGyver](https://youtu.be/-4cyo3Ajtcw)
 
 ## The Projects
 
