@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Application Identifier</key>
+	<string>com.sap.devrel</string>
+	<key>Destinations</key>
+	<dict>
+		<key>com.sap.devrel</key>
+		<string>com.sap.devrel</string>
+	</dict>
+</dict>
+</plist>
