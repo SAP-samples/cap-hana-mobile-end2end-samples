@@ -1,0 +1,64 @@
+## appName = advocates-service
+## language=nodejs; multiTenant=false
+_schema-version: '3.1'
+ID: advocates-service
+version: 1.0.6
+description: The Developer Advocates Service
+parameters:
+  enable-parallel-deployments: true
+
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm install
+        - npx cds build
+
+modules:
+  # --------------------- SERVER MODULE ------------------------
+  - name: advocates-service-srv
+  # ------------------------------------------------------------
+    type: nodejs
+    path: . # root for nodejs because of CAP way // fix comment
+    parameters:
+      memory: 512M
+      disk-quota: 2048M
+      host: 'advocatesservice'
+    requires:
+      # Resources extracted from CAP configuration
+      - name: advocates-service-db
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: '${default-url}'
+    build-parameters:
+      ignore: [".*/", "*default-env.json", "./db/node_modules", "./node_modules"]
+  
+  # -------------------- DB MODULE ------------------------
+  # Do the deployment into the HDI container cds deploy --to hana
+  - name: advocates-service-db-deployer
+  # ------------------------------------------------------------
+    type: hdb
+    path: db
+    parameters:
+      buildpack: nodejs_buildpack
+    requires:
+      - name: advocates-service-db
+        properties:
+          TARGET_CONTAINER: '~{hdi-service-name}'
+    build-parameters:
+      ignore: ["default-env.json", ".env"]
+
+# ------------------------------------------------------------
+resources:
+  # services extracted from CAP configuration
+  # 'service-plan' can be configured via 'cds.requires.<name>.vcap.plan'
+  # Create HDI container
+  - name: advocates-service-db
+# ------------------------------------------------------------
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+    properties:
+      hdi-service-name: '${service-name}'

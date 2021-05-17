@@ -1,0 +1,12 @@
+ID,createdAt,createdBy,modifiedAt,modifiedBy,name
+3b811ccd-56f2-4ea3-ab88-00959955e6f2,2020-04-14,john.doe@company.com,,,ABAP
+4b6dde82-d75e-4120-9714-a5e1cb215b30,2020-04-14,john.doe@company.com,,,HANA
+591ed0c7-cebd-42aa-b65f-c7376c7f8971,2020-04-14,john.doe@company.com,,,CAP
+6651ce14-1def-46c4-968b-d1762d4c1ece,2020-04-14,john.doe@company.com,,,Extensibility Suite
+6a207bf7-cf7f-4aad-84f3-e1b22d8d3f3a,2020-04-14,john.doe@company.com,,,Extension Suite
+be484af4-0f64-4c94-87cc-562069f2cef3,2020-04-14,john.doe@company.com,,,Open Source
+956b6c0f-fa32-4641-8f2d-0210f920282b,2020-04-14,john.doe@company.com,,,Cloud-native
+fa248698-f36e-4cbd-9154-a60f49fbceee,2020-04-14,john.doe@company.com,,,Web Development
+be2039f0-86d3-4d08-aec6-8f2724e8bd4e,2020-04-14,john.doe@company.com,,,Data and Analytics
+58580d33-93c9-4513-873c-006623d766a1,2020-04-14,john.doe@company.com,,,mobile
+2a98290c-46af-4aaa-91bf-4fbfcfa04262,2020-04-14,john.doe@company.com,,,SAP BTP Kyma runtime

@@ -1,0 +1,37 @@
+{
+  "name": "advocates-service",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^4",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.6.1",
+    "@sap/hana-client": "^2.6.61",
+    "cors": "^2.8.5",
+    "express": "^4",
+    "uuid": "^8.3"
+  },
+  "scripts": {
+    "start": "cds run",
+    "build": "cds build"
+  },
+  "cds": {
+    "build": {
+      "target": "."
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
+    },
+    "requires": {
+      "db": {
+        "kind": "hana"
+      }
+    }
+  },
+  "devDependencies": {
+    "@sap/hdi-deploy": "^4.0.4",
+    "@sap/ux-specification": "^1.84.7"
+  }
+}
