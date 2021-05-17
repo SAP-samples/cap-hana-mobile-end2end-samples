@@ -80,6 +80,7 @@ In order to use SAP Mobile Services and its features you need to create the Advo
 
 You can find the needed information here:
 
+![Mobile Services - OAuth Endpoint](https://github.com/SAP-samples/advocates-end2end-sample/blob/main/screenshots/oAuth_info.png)
 
 ## Requirements
 
