@@ -38,9 +38,21 @@ Component-specific requirements are to be found in the respective READMEs, but t
 
 ### A development environment
 
-#### Visual Studio Code
+#### Visual Studio Code / SAP Business Application Studio
+The Advocates Service is being implemented with the help of Visual Studio Code, you can also use the SAP Business Application Studio for implementation or replica of the project. 
+
+The benefit of using SAP Business Application Studio in comparisson to Visual Studio Code is that your development environment is fully setup.
+
+* [SAP Business Application Studio](https://developers.sap.com/topics/business-application-studio.html)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+If you need guidance on setting up VS Code for Cloud Application Programming model development you can follow the blog post of [Thomas Jung](https://people.sap.com/thomas.jung):
+* https://blogs.sap.com/2020/11/10/vscode-development-for-sap-cloud-application-programming-model-using-remote-wsl/
 
 #### Xcode
+The iOS Advocates App is being implemented with Apple Xcode. To develop native iOS apps you need a machine runnning MacOS, for this project the following versions are used:
+
+* [Xcode Version 12.5 (12E262) or later](https://developer.apple.com/xcode/)
 
 ### An SAP BTP trial account
 
