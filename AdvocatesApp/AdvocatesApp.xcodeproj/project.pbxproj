@@ -38,6 +38,19 @@
 		9193798A232F7A39001F9DAC /* SAPOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91937981232F7A38001F9DAC /* SAPOData.xcframework */; };
 		9193798B232F7A39001F9DAC /* SAPOData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91937981232F7A38001F9DAC /* SAPOData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		ACF098626825EB1295D99C4B /* MembersSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9D184870485EBB11981285 /* MembersSkills.swift */; };
+		BE617ECC26539F8000B7F2FE /* GitHubCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EBE26539F8000B7F2FE /* GitHubCellView.swift */; };
+		BE617ECD26539F8000B7F2FE /* EmptyContentCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EBF26539F8000B7F2FE /* EmptyContentCellView.swift */; };
+		BE617ECE26539F8000B7F2FE /* SocialMediaCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC026539F8000B7F2FE /* SocialMediaCellView.swift */; };
+		BE617ECF26539F8000B7F2FE /* AdvocatesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC126539F8000B7F2FE /* AdvocatesCellView.swift */; };
+		BE617ED026539F8000B7F2FE /* YouTubeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC226539F8000B7F2FE /* YouTubeCell.swift */; };
+		BE617ED126539F8000B7F2FE /* KPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC326539F8000B7F2FE /* KPIView.swift */; };
+		BE617ED226539F8000B7F2FE /* SkillBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC426539F8000B7F2FE /* SkillBoxView.swift */; };
+		BE617ED326539F8000B7F2FE /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC526539F8000B7F2FE /* ProfileHeaderView.swift */; };
+		BE617ED426539F8000B7F2FE /* AdvocatesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC726539F8000B7F2FE /* AdvocatesFilterView.swift */; };
+		BE617ED526539F8000B7F2FE /* AdvocatesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC826539F8000B7F2FE /* AdvocatesDetailView.swift */; };
+		BE617ED626539F8000B7F2FE /* AdvocatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617EC926539F8000B7F2FE /* AdvocatesView.swift */; };
+		BE617ED726539F8000B7F2FE /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617ECA26539F8000B7F2FE /* ImagePreview.swift */; };
+		BE617ED826539F8000B7F2FE /* FilterBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE617ECB26539F8000B7F2FE /* FilterBoxButton.swift */; };
 		C81BE7C7553F50EA013E6868 /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7AA468B79CE20BC9D61B5 /* Members.swift */; };
 		CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA7A9B1E3778A9001AF49E /* Main.storyboard */; };
 		D52B5A401AF585862EDB4A12 /* OnboardingFlowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0217BCAC1E23BA5AF2DFA77 /* OnboardingFlowProvider.swift */; };
@@ -104,6 +117,19 @@
 		9971ED878FF32DEF626EB8A1 /* EntityContainerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityContainerFactory.swift; path = "Proxy Classes/internal/EntityContainerFactory.swift"; sourceTree = "<group>"; };
 		9FF7AA468B79CE20BC9D61B5 /* Members.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Members.swift; path = "Proxy Classes/public/Members.swift"; sourceTree = "<group>"; };
 		AA9D184870485EBB11981285 /* MembersSkills.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MembersSkills.swift; path = "Proxy Classes/public/MembersSkills.swift"; sourceTree = "<group>"; };
+		BE617EBE26539F8000B7F2FE /* GitHubCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubCellView.swift; sourceTree = "<group>"; };
+		BE617EBF26539F8000B7F2FE /* EmptyContentCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyContentCellView.swift; sourceTree = "<group>"; };
+		BE617EC026539F8000B7F2FE /* SocialMediaCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaCellView.swift; sourceTree = "<group>"; };
+		BE617EC126539F8000B7F2FE /* AdvocatesCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvocatesCellView.swift; sourceTree = "<group>"; };
+		BE617EC226539F8000B7F2FE /* YouTubeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCell.swift; sourceTree = "<group>"; };
+		BE617EC326539F8000B7F2FE /* KPIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPIView.swift; sourceTree = "<group>"; };
+		BE617EC426539F8000B7F2FE /* SkillBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillBoxView.swift; sourceTree = "<group>"; };
+		BE617EC526539F8000B7F2FE /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		BE617EC726539F8000B7F2FE /* AdvocatesFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvocatesFilterView.swift; sourceTree = "<group>"; };
+		BE617EC826539F8000B7F2FE /* AdvocatesDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvocatesDetailView.swift; sourceTree = "<group>"; };
+		BE617EC926539F8000B7F2FE /* AdvocatesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvocatesView.swift; sourceTree = "<group>"; };
+		BE617ECA26539F8000B7F2FE /* ImagePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
+		BE617ECB26539F8000B7F2FE /* FilterBoxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterBoxButton.swift; sourceTree = "<group>"; };
 		CB909D801E38CA8800218154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0217BCAC1E23BA5AF2DFA77 /* OnboardingFlowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingFlowProvider.swift; path = Onboarding/OnboardingFlowProvider.swift; sourceTree = "<group>"; };
 		D7680BF1B444DB423D11578E /* AppParameters.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = AppParameters.plist; path = Onboarding/AppParameters.plist; sourceTree = "<group>"; };
@@ -169,6 +195,7 @@
 		7A1315B71D4B982000A5DA56 /* AdvocatesApp */ = {
 			isa = PBXGroup;
 			children = (
+				BE617EBC26539F8000B7F2FE /* Views */,
 				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
 				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
 				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
@@ -215,6 +242,42 @@
 				6C157CB83898FB284583F56B /* EntityContainerMetadata.swift */,
 			);
 			name = public;
+			sourceTree = "<group>";
+		};
+		BE617EBC26539F8000B7F2FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE617EBD26539F8000B7F2FE /* CellViews */,
+				BE617EC326539F8000B7F2FE /* KPIView.swift */,
+				BE617EC426539F8000B7F2FE /* SkillBoxView.swift */,
+				BE617EC526539F8000B7F2FE /* ProfileHeaderView.swift */,
+				BE617EC626539F8000B7F2FE /* Screens */,
+				BE617ECA26539F8000B7F2FE /* ImagePreview.swift */,
+				BE617ECB26539F8000B7F2FE /* FilterBoxButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE617EBD26539F8000B7F2FE /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				BE617EBE26539F8000B7F2FE /* GitHubCellView.swift */,
+				BE617EBF26539F8000B7F2FE /* EmptyContentCellView.swift */,
+				BE617EC026539F8000B7F2FE /* SocialMediaCellView.swift */,
+				BE617EC126539F8000B7F2FE /* AdvocatesCellView.swift */,
+				BE617EC226539F8000B7F2FE /* YouTubeCell.swift */,
+			);
+			path = CellViews;
+			sourceTree = "<group>";
+		};
+		BE617EC626539F8000B7F2FE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BE617EC726539F8000B7F2FE /* AdvocatesFilterView.swift */,
+				BE617EC826539F8000B7F2FE /* AdvocatesDetailView.swift */,
+				BE617EC926539F8000B7F2FE /* AdvocatesView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		EB3033146A7C5EBA6FA39E00 /* internal */ = {
@@ -289,7 +352,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = SAP;
 				TargetAttributes = {
 					7A1315B41D4B982000A5DA56 = {
@@ -394,20 +457,33 @@
 				2DC03A3C72F7DE83FC8D012B /* SocialMediaPresence.swift in Sources */,
 				5214D09D2A8ADD04BDAAA261 /* EntityContainerMetadataParser.swift in Sources */,
 				855AB7EB6F881754885FEB80 /* EntityContainer.swift in Sources */,
+				BE617ED726539F8000B7F2FE /* ImagePreview.swift in Sources */,
 				385FAC4F3E3C117D01E16FBF /* EntityContainerMetadataChanges.swift in Sources */,
+				BE617ECC26539F8000B7F2FE /* GitHubCellView.swift in Sources */,
+				BE617ECD26539F8000B7F2FE /* EmptyContentCellView.swift in Sources */,
+				BE617ED826539F8000B7F2FE /* FilterBoxButton.swift in Sources */,
+				BE617ED426539F8000B7F2FE /* AdvocatesFilterView.swift in Sources */,
 				DB4B365462DB007DCBE4B678 /* EntityContainerMetadataText.swift in Sources */,
+				BE617ED626539F8000B7F2FE /* AdvocatesView.swift in Sources */,
 				E78D2146E2DFF37C15E56D00 /* EntityContainerFactory.swift in Sources */,
+				BE617ED226539F8000B7F2FE /* SkillBoxView.swift in Sources */,
 				6F0237A281E5F94C6A967C89 /* EntityContainerStaticResolver.swift in Sources */,
 				ACF098626825EB1295D99C4B /* MembersSkills.swift in Sources */,
 				C81BE7C7553F50EA013E6868 /* Members.swift in Sources */,
+				BE617ECE26539F8000B7F2FE /* SocialMediaCellView.swift in Sources */,
 				683360BFB80AA7B22651B2BD /* Skill.swift in Sources */,
+				BE617ED526539F8000B7F2FE /* AdvocatesDetailView.swift in Sources */,
 				6FF065ABA40DAA891D9DB4F8 /* EntityContainerMetadata.swift in Sources */,
+				BE617ED026539F8000B7F2FE /* YouTubeCell.swift in Sources */,
 				4AD830EC8285A01A0BFD9719 /* LocalizedStrings.swift in Sources */,
 				D52B5A401AF585862EDB4A12 /* OnboardingFlowProvider.swift in Sources */,
+				BE617ED326539F8000B7F2FE /* ProfileHeaderView.swift in Sources */,
 				067368A7B9735579FFC7CD48 /* ConfigurationProvider.plist in Sources */,
 				7850B9AEF98E9E7DB3ACCBCB /* OnboardingErrorHandler.swift in Sources */,
 				842FDC94B088378BDA1032C7 /* ApplicationUIManager.swift in Sources */,
 				4FDFD6F13040C4CC91633C9D /* AppParameters.plist in Sources */,
+				BE617ECF26539F8000B7F2FE /* AdvocatesCellView.swift in Sources */,
+				BE617ED126539F8000B7F2FE /* KPIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +550,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -498,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -535,6 +612,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -553,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
