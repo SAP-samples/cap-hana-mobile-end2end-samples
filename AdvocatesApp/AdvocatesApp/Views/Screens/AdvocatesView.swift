@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import SAPOData
+import SAPOfflineOData
+import SAPFoundation
 
 struct AdvocatesView: View {
+    
+    
 //    @ObservedObject var filter: Filter
 //    @State private var advocates = [Advocate]()
 //    @State private var isShowingFilterView = false

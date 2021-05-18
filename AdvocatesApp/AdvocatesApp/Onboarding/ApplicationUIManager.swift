@@ -8,6 +8,7 @@ import SAPCommon
 import SAPFiori
 import SAPFioriFlows
 import SAPFoundation
+import SwiftUI
 
 class SnapshotViewController: UIViewController {}
 
@@ -80,8 +81,9 @@ class ApplicationUIManager: ApplicationUIManaging {
         if let savedViewController = self._savedApplicationRootViewController {
             appViewController = savedViewController
         } else {
-            let viewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainViewController")
-            appViewController = viewController
+            var advocatesView = AdvocatesView()
+            let hostingController = UIHostingController(rootView: advocatesView)
+            appViewController = hostingController
         }
         self.window.rootViewController = appViewController
         self._onboardingSplashViewController = nil
