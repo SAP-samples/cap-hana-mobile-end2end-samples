@@ -140,7 +140,9 @@ Throughout the instructions in this repository, the place where you forked this 
 
 ## Known issues
 
-* https://github.com/SAP-samples/advocates-end2end-sample/issues/1
+The iOS app is still in its early stages and not functioning at the moment. Please see the issues page for more information.
+
+https://github.com/SAP-samples/advocates-end2end-sample/issues/
 
 ## How to obtain support
 
