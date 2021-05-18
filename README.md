@@ -1,3 +1,4 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/advocates-end2end-sample)](https://api.reuse.software/info/github.com/SAP-samples/advocates-end2end-sample)
 # Advocates-End2End-Sample
 This repository contains the CAP as well as the native iOS app for the End2End example series: **The Advocates Service**
 
