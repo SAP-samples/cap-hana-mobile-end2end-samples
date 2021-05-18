@@ -139,7 +139,7 @@ Throughout the instructions in this repository, the place where you forked this 
 
 ## Known issues
 
-None at the time of writing.
+* https://github.com/SAP-samples/advocates-end2end-sample/issues/1
 
 ## How to obtain support
 
