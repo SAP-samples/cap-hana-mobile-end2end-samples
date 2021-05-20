@@ -2,7 +2,7 @@ using advocates.service as advocates from '../db/schema';
 
 service AdvocatesService {
     @readonly : true
-    entity Members as projection on advocates.Members;
+    entity Member as projection on advocates.Member;
     
     @readonly : true
     entity Skill as projection on advocates.Skill;

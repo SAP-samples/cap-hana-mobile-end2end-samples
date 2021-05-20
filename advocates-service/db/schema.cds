@@ -6,7 +6,7 @@ using {
     cuid
 } from '@sap/cds/common';
 
-entity Members  : cuid, managed {
+entity Member  : cuid, managed {
     firstName   : String;
     lastName    : String;
     title       : String;
@@ -24,10 +24,10 @@ entity Skill    : cuid, managed {
 entity SocialMediaPresence  : cuid, managed {
     name    : String;
     url     : String;
-    member  : Association to Members;
+    member  : Association to Member;
 }
 
 entity Members2Skills   : cuid, managed {
-    member_ID           : Association to Members;
+    member_ID           : Association to Member;
     skill_ID            : Association to Skill;
 }

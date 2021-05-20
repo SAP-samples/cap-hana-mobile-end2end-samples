@@ -2,7 +2,7 @@
 ## language=nodejs; multiTenant=false
 _schema-version: '3.1'
 ID: advocates-service
-version: 1.0.6
+version: 1.0.7
 description: The Developer Advocates Service
 parameters:
   enable-parallel-deployments: true
