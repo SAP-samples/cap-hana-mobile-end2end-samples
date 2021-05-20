@@ -7,13 +7,13 @@ using {
 } from '@sap/cds/common';
 
 entity Member  : cuid, managed {
-    firstName   : String;
-    lastName    : String;
-    title       : String;
-    focusArea   : String;
+    firstName   : String @mandatory;
+    lastName    : String @mandatory;
+    title       : String @mandatory;
+    focusArea   : String @mandatory;
     skills      : Association to many Members2Skills on skills.member_ID = $self;
     socialMedia : Association to many SocialMediaPresence on socialMedia.member = $self;
-    description : String;
+    description : String @mandatory;
 }
 
 entity Skill    : cuid, managed {
