@@ -1,0 +1,33 @@
+{
+    "authenticationMethod": "route",
+    "routes": [
+      {
+        "source": "/advocates/(.*)",
+        "destination": "AdvocatesService",
+        "csrfProtection": true,
+        "authenticationType": "xsuaa"
+      },
+      {
+        "source": "/advocates/v2/(.*)",
+        "destination": "AdvocatesService",
+        "csrfProtection": true,
+        "authenticationType": "xsuaa"
+      },
+      {
+        "source": "/rest/advocates/*/(.*)",
+        "destination": "AdvocatesService",
+        "csrfProtection": true,
+        "authenticationType": "xsuaa"
+      },
+      {
+        "source": "^/user-api(.*)",
+        "target": "$1",
+        "service": "sap-approuter-userapi"
+      },
+      {
+        "source": "/(.*)",
+        "localDir": ".",
+        "authenticationType": "xsuaa"
+      }
+  ]
+}

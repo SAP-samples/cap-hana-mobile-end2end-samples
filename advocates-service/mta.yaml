@@ -2,7 +2,7 @@
 ## language=nodejs; multiTenant=false
 _schema-version: '3.1'
 ID: advocates-service
-version: 1.0.7
+version: 1.1.9
 description: The Developer Advocates Service
 parameters:
   enable-parallel-deployments: true
@@ -15,24 +15,48 @@ build-parameters:
         - npx cds build
 
 modules:
-  # --------------------- SERVER MODULE ------------------------
-  - name: advocates-service-srv
+  # -------------------- App Router MODULE ------------------------
+  # Do the deployment of the App Router
+  - name: advocates-service-approuter
   # ------------------------------------------------------------
     type: nodejs
-    path: . # root for nodejs because of CAP way // fix comment
+    path: router
+    parameters:
+      disk-quota: 512M
+      memory: 512M
+      instances: 1
+    requires:
+      - name: advocates-xsuaa-service
+      - name: advocates-service-srv
+        group: destinations
+        properties:
+          forwardAuthToken: true
+          strictSSL: false
+          name: AdvocatesService
+          url: ~{srv-url}
+    build-parameters:
+      ignore: ["default-env.json", ".env", "node_modules/"]
+
+  # --------------------- SERVER MODULE ------------------------
+  - name: advocates-service-srv-module
+  # ------------------------------------------------------------
+    type: nodejs
+    path: srv
     parameters:
       memory: 512M
       disk-quota: 2048M
       host: 'advocatesservice'
+      instances: 1
     requires:
       # Resources extracted from CAP configuration
       - name: advocates-service-db
+      - name: advocates-xsuaa-service
     provides:
-      - name: srv-api
+      - name: advocates-service-srv
         properties:
           srv-url: '${default-url}'
     build-parameters:
-      ignore: [".*/", "*default-env.json", "./db/node_modules", "./node_modules"]
+      ignore: [".*/", "default-env.json", node_modules/, ./node_modules]
   
   # -------------------- DB MODULE ------------------------
   # Do the deployment into the HDI container cds deploy --to hana
@@ -47,7 +71,7 @@ modules:
         properties:
           TARGET_CONTAINER: '~{hdi-service-name}'
     build-parameters:
-      ignore: ["default-env.json", ".env"]
+      ignore: ["default-env.json", ".env", "node_modules/"]
 
 # ------------------------------------------------------------
 resources:
@@ -62,3 +86,12 @@ resources:
       service-plan: hdi-shared
     properties:
       hdi-service-name: '${service-name}'
+
+# ------------------------------------------------------------
+  - name: advocates-xsuaa-service
+# ------------------------------------------------------------
+    type: org.cloudfoundry.managed-service
+    parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa

@@ -7,14 +7,12 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^4",
-    "@sap/cds-odata-v2-adapter-proxy": "^1.6.1",
-    "@sap/hana-client": "^2.6.61",
-    "cors": "^2.8.5",
     "express": "^4",
-    "uuid": "^8.3"
+    "hdb": "^0.17.1",
+    "passport": "^0.4.1"
   },
   "scripts": {
-    "start": "cds run",
+    "start": "NODE_ENV=production cds run",
     "build": "cds build"
   },
   "cds": {
@@ -27,6 +25,9 @@
     "requires": {
       "db": {
         "kind": "hana"
+      },
+      "uaa": {
+        "kind": "xsuaa"
       }
     }
   },

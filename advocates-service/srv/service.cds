@@ -1,5 +1,6 @@
 using advocates.service as advocates from '../db/schema';
 
+@requires: 'authenticated-user'
 service AdvocatesService {
     @readonly : true
     entity Member as projection on advocates.Member;

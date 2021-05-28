@@ -1,0 +1,14 @@
+{
+	"name": "advocates-service-approuter",
+	"description": "Node.js based application router service",
+	"dependencies": {
+		"@sap/approuter": "^10.2.0",
+		"@sap/audit-logging": "^5.0.0",
+		"@sap/xsenv": "^3.1.0",
+		"@sap/xssec": "^3.2.0",
+		"passport": "^0.4.1"
+	},
+	"scripts": {
+		"start": "node extended-server.js"
+	}
+}
