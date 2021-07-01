@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="APx-IJ-4ks">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Advocates Table View Controller-->
+        <scene sceneID="cfu-By-mEU">
+            <objects>
+                <tableViewController storyboardIdentifier="AdvocatesTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vhH-Rn-Nz4" customClass="AdvocatesTableViewController" customModule="AdvocatesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="unO-fi-g0O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PU6-9l-roJ">
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PU6-9l-roJ" id="3F9-zL-o8m">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="oAi-wp-2yb" kind="showDetail" identifier="showAdvocateDetail" id="7wg-W2-QkN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vhH-Rn-Nz4" id="qW6-SN-Eil"/>
+                            <outlet property="delegate" destination="vhH-Rn-Nz4" id="7ZL-WN-wVX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="vmi-8x-Ane"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="xIP-gp-4wo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCx-Uu-vgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.79999999999995" y="-457.42128935532236"/>
+        </scene>
+        <!--Advocate Detail View Controller-->
+        <scene sceneID="nwL-eQ-8Q9">
+            <objects>
+                <viewController id="oAi-wp-2yb" customClass="AdvocateDetailViewController" customModule="AdvocatesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NG9-SM-5mU"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ar-su-wQQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ipy-nx-pBU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lcc-YU-kzY">
+                                <rect key="frame" x="20" y="8" width="237.5" height="93"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kevin Muessig" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHK-8Y-3BL">
+                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="37"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer Advocate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-Iz-AXk">
+                                        <rect key="frame" x="0.0" y="42" width="170.5" height="23"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAP BTP Cross Architecture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkC-gC-p8j">
+                                        <rect key="frame" x="0.0" y="70" width="237.5" height="23"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnb-O7-TbR">
+                                <rect key="frame" x="20" y="109" width="335" height="530"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lcc-YU-kzY" firstAttribute="leading" secondItem="Ipy-nx-pBU" secondAttribute="leading" constant="20" symbolic="YES" id="0Z2-Jw-YUV"/>
+                            <constraint firstItem="Wnb-O7-TbR" firstAttribute="top" secondItem="lcc-YU-kzY" secondAttribute="bottom" constant="8" symbolic="YES" id="6Sg-QE-xyE"/>
+                            <constraint firstAttribute="trailing" secondItem="Wnb-O7-TbR" secondAttribute="trailing" constant="20" symbolic="YES" id="6nR-yu-akK"/>
+                            <constraint firstItem="4ar-su-wQQ" firstAttribute="top" secondItem="Wnb-O7-TbR" secondAttribute="bottom" constant="8" symbolic="YES" id="DjM-4g-tor"/>
+                            <constraint firstItem="Wnb-O7-TbR" firstAttribute="leading" secondItem="lcc-YU-kzY" secondAttribute="leading" id="cpT-oa-buF"/>
+                            <constraint firstItem="lcc-YU-kzY" firstAttribute="top" secondItem="NG9-SM-5mU" secondAttribute="bottom" constant="8" symbolic="YES" id="xsK-xY-BgI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="Wnb-O7-TbR" id="1Ka-4V-gJi"/>
+                        <outlet property="focusAreaLabel" destination="MkC-gC-p8j" id="i68-JT-r4V"/>
+                        <outlet property="nameLabel" destination="GHK-8Y-3BL" id="V5g-oh-Pbn"/>
+                        <outlet property="titleLabel" destination="Znf-Iz-AXk" id="gfE-63-xAh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vay-q0-r5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="-457.42128935532236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="99w-zi-sB9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="APx-IJ-4ks" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cgg-Cz-MBg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vhH-Rn-Nz4" kind="relationship" relationship="rootViewController" id="dCB-yL-1XU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4e-i3-abf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154.40000000000001" y="-457.42128935532236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

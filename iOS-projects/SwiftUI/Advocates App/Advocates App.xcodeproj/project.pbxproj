@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE331D4B268B6966000A8D6C /* AdvocatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */; };
+		BE331D4D268B6966000A8D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D4C268B6966000A8D6C /* ContentView.swift */; };
+		BE331D4F268B6973000A8D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE331D4E268B6973000A8D6C /* Assets.xcassets */; };
+		BE331D52268B6973000A8D6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE331D51268B6973000A8D6C /* Preview Assets.xcassets */; };
+		BE331D67268B6993000A8D6C /* advocatesServiceMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D5B268B6993000A8D6C /* advocatesServiceMetadataChanges.swift */; };
+		BE331D68268B6993000A8D6C /* advocatesServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D5C268B6993000A8D6C /* advocatesServiceFactory.swift */; };
+		BE331D69268B6993000A8D6C /* advocatesServiceStaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D5D268B6993000A8D6C /* advocatesServiceStaticResolver.swift */; };
+		BE331D6A268B6993000A8D6C /* advocatesServiceMetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D5E268B6993000A8D6C /* advocatesServiceMetadataText.swift */; };
+		BE331D6B268B6993000A8D6C /* advocatesServiceMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D5F268B6993000A8D6C /* advocatesServiceMetadataParser.swift */; };
+		BE331D6C268B6993000A8D6C /* SocialMediaPresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D61268B6993000A8D6C /* SocialMediaPresence.swift */; };
+		BE331D6D268B6993000A8D6C /* MembersSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D62268B6993000A8D6C /* MembersSkills.swift */; };
+		BE331D6E268B6993000A8D6C /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D63268B6993000A8D6C /* Member.swift */; };
+		BE331D6F268B6993000A8D6C /* AdvocatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D64268B6993000A8D6C /* AdvocatesService.swift */; };
+		BE331D70268B6993000A8D6C /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D65268B6993000A8D6C /* Skill.swift */; };
+		BE331D71268B6993000A8D6C /* advocatesServiceMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D66268B6993000A8D6C /* advocatesServiceMetadata.swift */; };
+		BE331D73268B69BC000A8D6C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D72268B69BC000A8D6C /* DataModel.swift */; };
+		BE331D78268B69F5000A8D6C /* SAPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE331D75268B69F3000A8D6C /* SAPFoundation.xcframework */; };
+		BE331D79268B69F5000A8D6C /* SAPCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE331D76268B69F4000A8D6C /* SAPCommon.xcframework */; };
+		BE331D7A268B69F5000A8D6C /* SAPOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE331D77268B69F5000A8D6C /* SAPOData.xcframework */; };
+		BE331D7D268B6A55000A8D6C /* FioriSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BE331D7C268B6A55000A8D6C /* FioriSwiftUI */; };
+		BE331D7E268B6A55000A8D6C /* FioriSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BE331D7C268B6A55000A8D6C /* FioriSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BE331D81268B7156000A8D6C /* Member+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D80268B7156000A8D6C /* Member+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE331D7F268B6A55000A8D6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE331D7E268B6A55000A8D6C /* FioriSwiftUI in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE331D47268B6966000A8D6C /* Advocates App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advocates App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvocatesApp.swift; sourceTree = "<group>"; };
+		BE331D4C268B6966000A8D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE331D4E268B6973000A8D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE331D51268B6973000A8D6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE331D53268B6973000A8D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE331D5B268B6993000A8D6C /* advocatesServiceMetadataChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = advocatesServiceMetadataChanges.swift; sourceTree = "<group>"; };
+		BE331D5C268B6993000A8D6C /* advocatesServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = advocatesServiceFactory.swift; sourceTree = "<group>"; };
+		BE331D5D268B6993000A8D6C /* advocatesServiceStaticResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = advocatesServiceStaticResolver.swift; sourceTree = "<group>"; };
+		BE331D5E268B6993000A8D6C /* advocatesServiceMetadataText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = advocatesServiceMetadataText.swift; sourceTree = "<group>"; };
+		BE331D5F268B6993000A8D6C /* advocatesServiceMetadataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = advocatesServiceMetadataParser.swift; sourceTree = "<group>"; };
+		BE331D61268B6993000A8D6C /* SocialMediaPresence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaPresence.swift; sourceTree = "<group>"; };
+		BE331D62268B6993000A8D6C /* MembersSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersSkills.swift; sourceTree = "<group>"; };
+		BE331D63268B6993000A8D6C /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		BE331D64268B6993000A8D6C /* AdvocatesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvocatesService.swift; sourceTree = "<group>"; };
+		BE331D65268B6993000A8D6C /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		BE331D66268B6993000A8D6C /* advocatesServiceMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = advocatesServiceMetadata.swift; sourceTree = "<group>"; };
+		BE331D72268B69BC000A8D6C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		BE331D75268B69F3000A8D6C /* SAPFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPFoundation.xcframework; sourceTree = "<group>"; };
+		BE331D76268B69F4000A8D6C /* SAPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPCommon.xcframework; sourceTree = "<group>"; };
+		BE331D77268B69F5000A8D6C /* SAPOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPOData.xcframework; sourceTree = "<group>"; };
+		BE331D80268B7156000A8D6C /* Member+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE331D44268B6966000A8D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE331D7D268B6A55000A8D6C /* FioriSwiftUI in Frameworks */,
+				BE331D78268B69F5000A8D6C /* SAPFoundation.xcframework in Frameworks */,
+				BE331D79268B69F5000A8D6C /* SAPCommon.xcframework in Frameworks */,
+				BE331D7A268B69F5000A8D6C /* SAPOData.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE331D3E268B6966000A8D6C = {
+			isa = PBXGroup;
+			children = (
+				BE331D74268B69D4000A8D6C /* Frameworks */,
+				BE331D49268B6966000A8D6C /* Advocates App */,
+				BE331D48268B6966000A8D6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE331D48268B6966000A8D6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE331D47268B6966000A8D6C /* Advocates App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE331D49268B6966000A8D6C /* Advocates App */ = {
+			isa = PBXGroup;
+			children = (
+				BE331D59268B6993000A8D6C /* Proxy Classes */,
+				BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */,
+				BE331D4C268B6966000A8D6C /* ContentView.swift */,
+				BE331D72268B69BC000A8D6C /* DataModel.swift */,
+				BE331D80268B7156000A8D6C /* Member+Extensions.swift */,
+				BE331D4E268B6973000A8D6C /* Assets.xcassets */,
+				BE331D53268B6973000A8D6C /* Info.plist */,
+				BE331D50268B6973000A8D6C /* Preview Content */,
+			);
+			path = "Advocates App";
+			sourceTree = "<group>";
+		};
+		BE331D50268B6973000A8D6C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE331D51268B6973000A8D6C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE331D59268B6993000A8D6C /* Proxy Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE331D5A268B6993000A8D6C /* internal */,
+				BE331D60268B6993000A8D6C /* public */,
+			);
+			path = "Proxy Classes";
+			sourceTree = "<group>";
+		};
+		BE331D5A268B6993000A8D6C /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				BE331D5B268B6993000A8D6C /* advocatesServiceMetadataChanges.swift */,
+				BE331D5C268B6993000A8D6C /* advocatesServiceFactory.swift */,
+				BE331D5D268B6993000A8D6C /* advocatesServiceStaticResolver.swift */,
+				BE331D5E268B6993000A8D6C /* advocatesServiceMetadataText.swift */,
+				BE331D5F268B6993000A8D6C /* advocatesServiceMetadataParser.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		BE331D60268B6993000A8D6C /* public */ = {
+			isa = PBXGroup;
+			children = (
+				BE331D61268B6993000A8D6C /* SocialMediaPresence.swift */,
+				BE331D62268B6993000A8D6C /* MembersSkills.swift */,
+				BE331D63268B6993000A8D6C /* Member.swift */,
+				BE331D64268B6993000A8D6C /* AdvocatesService.swift */,
+				BE331D65268B6993000A8D6C /* Skill.swift */,
+				BE331D66268B6993000A8D6C /* advocatesServiceMetadata.swift */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		BE331D74268B69D4000A8D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE331D76268B69F4000A8D6C /* SAPCommon.xcframework */,
+				BE331D75268B69F3000A8D6C /* SAPFoundation.xcframework */,
+				BE331D77268B69F5000A8D6C /* SAPOData.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE331D46268B6966000A8D6C /* Advocates App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE331D56268B6973000A8D6C /* Build configuration list for PBXNativeTarget "Advocates App" */;
+			buildPhases = (
+				BE331D43268B6966000A8D6C /* Sources */,
+				BE331D44268B6966000A8D6C /* Frameworks */,
+				BE331D45268B6966000A8D6C /* Resources */,
+				BE331D7F268B6A55000A8D6C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Advocates App";
+			packageProductDependencies = (
+				BE331D7C268B6A55000A8D6C /* FioriSwiftUI */,
+			);
+			productName = "Advocates App";
+			productReference = BE331D47268B6966000A8D6C /* Advocates App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE331D3F268B6966000A8D6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BE331D46268B6966000A8D6C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = BE331D42268B6966000A8D6C /* Build configuration list for PBXProject "Advocates App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE331D3E268B6966000A8D6C;
+			packageReferences = (
+				BE331D7B268B6A55000A8D6C /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */,
+			);
+			productRefGroup = BE331D48268B6966000A8D6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE331D46268B6966000A8D6C /* Advocates App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE331D45268B6966000A8D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE331D52268B6973000A8D6C /* Preview Assets.xcassets in Resources */,
+				BE331D4F268B6973000A8D6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE331D43268B6966000A8D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE331D6A268B6993000A8D6C /* advocatesServiceMetadataText.swift in Sources */,
+				BE331D6F268B6993000A8D6C /* AdvocatesService.swift in Sources */,
+				BE331D4D268B6966000A8D6C /* ContentView.swift in Sources */,
+				BE331D6D268B6993000A8D6C /* MembersSkills.swift in Sources */,
+				BE331D69268B6993000A8D6C /* advocatesServiceStaticResolver.swift in Sources */,
+				BE331D4B268B6966000A8D6C /* AdvocatesApp.swift in Sources */,
+				BE331D6C268B6993000A8D6C /* SocialMediaPresence.swift in Sources */,
+				BE331D73268B69BC000A8D6C /* DataModel.swift in Sources */,
+				BE331D81268B7156000A8D6C /* Member+Extensions.swift in Sources */,
+				BE331D67268B6993000A8D6C /* advocatesServiceMetadataChanges.swift in Sources */,
+				BE331D68268B6993000A8D6C /* advocatesServiceFactory.swift in Sources */,
+				BE331D70268B6993000A8D6C /* Skill.swift in Sources */,
+				BE331D6B268B6993000A8D6C /* advocatesServiceMetadataParser.swift in Sources */,
+				BE331D71268B6993000A8D6C /* advocatesServiceMetadata.swift in Sources */,
+				BE331D6E268B6993000A8D6C /* Member.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE331D54268B6973000A8D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE331D55268B6973000A8D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE331D57268B6973000A8D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Advocates App/Preview Content\"";
+				DEVELOPMENT_TEAM = AMW5B25QXP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Advocates App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Advocates-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE331D58268B6973000A8D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Advocates App/Preview Content\"";
+				DEVELOPMENT_TEAM = AMW5B25QXP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Advocates App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Advocates-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE331D42268B6966000A8D6C /* Build configuration list for PBXProject "Advocates App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE331D54268B6973000A8D6C /* Debug */,
+				BE331D55268B6973000A8D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE331D56268B6973000A8D6C /* Build configuration list for PBXNativeTarget "Advocates App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE331D57268B6973000A8D6C /* Debug */,
+				BE331D58268B6973000A8D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE331D7B268B6A55000A8D6C /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SAP/cloud-sdk-ios-fiori";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE331D7C268B6A55000A8D6C /* FioriSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE331D7B268B6A55000A8D6C /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */;
+			productName = FioriSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BE331D3F268B6966000A8D6C /* Project object */;
+}
