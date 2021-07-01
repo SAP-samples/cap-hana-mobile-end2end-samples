@@ -16,6 +16,12 @@ entity Member  : cuid, managed {
     description : String @mandatory;
 }
 
+entity MemberImages {
+    key member      : Association to Member;
+        image       : LargeBinary   @Core.MediaType : imageType;
+        imageType   : String        @Core.IsMediaType;
+}
+
 entity Skill    : cuid, managed {
     name        : String;
     member      : Association to many Members2Skills on member.skill_ID = $self;

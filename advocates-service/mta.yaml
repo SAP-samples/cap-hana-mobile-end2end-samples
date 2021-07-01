@@ -2,7 +2,7 @@
 ## language=nodejs; multiTenant=false
 _schema-version: '3.1'
 ID: advocates-service
-version: 1.2.1
+version: 1.0.1
 description: The Developer Advocates Service
 parameters:
   enable-parallel-deployments: true
@@ -26,7 +26,7 @@ modules:
       memory: 512M
       instances: 1
     requires:
-      - name: advocates-xsuaa-service
+      - name: advocates-service-xsuaa
       - name: advocates-service-srv
         group: destinations
         properties:
@@ -50,7 +50,7 @@ modules:
     requires:
       # Resources extracted from CAP configuration
       - name: advocates-service-db
-      - name: advocates-xsuaa-service
+      - name: advocates-service-xsuaa
     provides:
       - name: advocates-service-srv
         properties:
@@ -88,7 +88,7 @@ resources:
       hdi-service-name: '${service-name}'
 
 # ------------------------------------------------------------
-  - name: advocates-xsuaa-service
+  - name: advocates-service-xsuaa
 # ------------------------------------------------------------
     type: org.cloudfoundry.managed-service
     parameters:

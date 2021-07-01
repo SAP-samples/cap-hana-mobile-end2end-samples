@@ -1,0 +1,2 @@
+GET http://localhost:4004/advocates/ImageService/MemberImages('06f6456a-a200-4853-a359-0cc7c2f5fe81')/image HTTP/1.1
+Content-Type: application/octet-stream

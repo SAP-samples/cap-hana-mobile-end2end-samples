@@ -36,9 +36,10 @@ cds.on('bootstrap', app => {
         .to("rest")
         .at(restURL + 'advocates')
         .in(app)
+        .with(require("./image-service"))
         .catch((err) => {
             app.logger.error(err);
-        })
+        })    
 })
 
 module.exports = cds.server
