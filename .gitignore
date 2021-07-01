@@ -54,3 +54,8 @@ mta_archives/
 default-*.json
 
 /mta_archives/
+
+# Xcode / iOS
+
+# Frameworks
+iOS-projects/SwiftUI/Advocates App/Frameworks/*
