@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2B5563268F7884006FC710 /* AdvocatesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B5562268F7884006FC710 /* AdvocatesDetailView.swift */; };
 		BE331D4B268B6966000A8D6C /* AdvocatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */; };
 		BE331D4D268B6966000A8D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D4C268B6966000A8D6C /* ContentView.swift */; };
 		BE331D4F268B6973000A8D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE331D4E268B6973000A8D6C /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE2B5562268F7884006FC710 /* AdvocatesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvocatesDetailView.swift; sourceTree = "<group>"; };
 		BE331D47268B6966000A8D6C /* Advocates App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advocates App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvocatesApp.swift; sourceTree = "<group>"; };
 		BE331D4C268B6966000A8D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				BE331D59268B6993000A8D6C /* Proxy Classes */,
 				BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */,
 				BE331D4C268B6966000A8D6C /* ContentView.swift */,
+				BE2B5562268F7884006FC710 /* AdvocatesDetailView.swift */,
 				BE331D72268B69BC000A8D6C /* DataModel.swift */,
 				BE331D80268B7156000A8D6C /* Member+Extensions.swift */,
 				BE331D4E268B6973000A8D6C /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 				BE331D67268B6993000A8D6C /* advocatesServiceMetadataChanges.swift in Sources */,
 				BE331D68268B6993000A8D6C /* advocatesServiceFactory.swift in Sources */,
 				BE331D70268B6993000A8D6C /* Skill.swift in Sources */,
+				BE2B5563268F7884006FC710 /* AdvocatesDetailView.swift in Sources */,
 				BE331D6B268B6993000A8D6C /* advocatesServiceMetadataParser.swift in Sources */,
 				BE331D71268B6993000A8D6C /* advocatesServiceMetadata.swift in Sources */,
 				BE331D6E268B6993000A8D6C /* Member.swift in Sources */,

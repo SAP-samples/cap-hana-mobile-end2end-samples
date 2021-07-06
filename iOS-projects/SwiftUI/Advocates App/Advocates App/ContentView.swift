@@ -13,26 +13,27 @@ struct ContentView: View {
     @EnvironmentObject var dataModel: DataModel
     
     var body: some View {
-        return ScrollView {
-            VStack {
-                Text("Advocates")
+        NavigationView {
+            List {
                 ForEach(dataModel.advocates) { advocate in
                     // Model-based initializer
-//                    ObjectItem(model: advocate)
-//                        .padding(EdgeInsets(top: 0, leading: 32, bottom: 0, trailing: 32))
-                    
-                    // Alternative: ViewBuilder-based initializer
-                    if let firstName = advocate.firstName, let lastName = advocate.lastName, let title = advocate.title, let area = advocate.focusArea {
-                        ObjectItem(title: {
-                            Text(firstName + " " + lastName)
-                        }, subtitle: {
-                            Text(title)
-                        }, footnote: {
-                            Text(area)
-                        })
+                    NavigationLink(destination: AdvocatesDetailView(advocate: advocate)) {
+                        ObjectItem(model: advocate)
+                            .padding(EdgeInsets(top: 0, leading: 32, bottom: 0, trailing: 32))
+                        
+                        // Alternative: ViewBuilder-based initializer
+                        //                    if let firstName = advocate.firstName, let lastName = advocate.lastName, let title = advocate.title, let area = advocate.focusArea {
+                        //                        ObjectItem(title: {
+                        //                            Text(firstName + " " + lastName)
+                        //                        }, subtitle: {
+                        //                            Text(title)
+                        //                        }, footnote: {
+                        //                            Text(area)
+                        //                        })
+                        //                    }
                     }
                 }
-            }
+            }.navigationTitle("Advocates App")
         }
     }
 }

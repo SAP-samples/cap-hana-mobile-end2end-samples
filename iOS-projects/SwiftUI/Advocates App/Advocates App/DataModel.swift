@@ -22,6 +22,11 @@ class DataModel: ObservableObject {
         let service = AdvocatesService(provider: provider)
         
         service.fetchMember { members, error in
+            
+            if let error = error {
+                
+                return
+            }
             self.advocates = members ?? []
         }
     }
