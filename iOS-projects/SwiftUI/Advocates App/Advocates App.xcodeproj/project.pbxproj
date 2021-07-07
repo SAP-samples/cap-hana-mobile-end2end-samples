@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2428772696342600929108 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2428762696342600929108 /* SearchBarView.swift */; };
 		BE2B5563268F7884006FC710 /* AdvocatesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B5562268F7884006FC710 /* AdvocatesDetailView.swift */; };
 		BE331D4B268B6966000A8D6C /* AdvocatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */; };
 		BE331D4D268B6966000A8D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D4C268B6966000A8D6C /* ContentView.swift */; };
@@ -27,9 +28,8 @@
 		BE331D78268B69F5000A8D6C /* SAPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE331D75268B69F3000A8D6C /* SAPFoundation.xcframework */; };
 		BE331D79268B69F5000A8D6C /* SAPCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE331D76268B69F4000A8D6C /* SAPCommon.xcframework */; };
 		BE331D7A268B69F5000A8D6C /* SAPOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE331D77268B69F5000A8D6C /* SAPOData.xcframework */; };
-		BE331D7D268B6A55000A8D6C /* FioriSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BE331D7C268B6A55000A8D6C /* FioriSwiftUI */; };
-		BE331D7E268B6A55000A8D6C /* FioriSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BE331D7C268B6A55000A8D6C /* FioriSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BE331D81268B7156000A8D6C /* Member+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE331D80268B7156000A8D6C /* Member+Extensions.swift */; };
+		BE7FB7042696333800F6DB2B /* FioriSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BE7FB7032696333800F6DB2B /* FioriSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,7 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE331D7E268B6A55000A8D6C /* FioriSwiftUI in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE2428762696342600929108 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		BE2B5562268F7884006FC710 /* AdvocatesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvocatesDetailView.swift; sourceTree = "<group>"; };
 		BE331D47268B6966000A8D6C /* Advocates App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advocates App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvocatesApp.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE331D7D268B6A55000A8D6C /* FioriSwiftUI in Frameworks */,
+				BE7FB7042696333800F6DB2B /* FioriSwiftUI in Frameworks */,
 				BE331D78268B69F5000A8D6C /* SAPFoundation.xcframework in Frameworks */,
 				BE331D79268B69F5000A8D6C /* SAPCommon.xcframework in Frameworks */,
 				BE331D7A268B69F5000A8D6C /* SAPOData.xcframework in Frameworks */,
@@ -87,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE2428752696340D00929108 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				BE2428762696342600929108 /* SearchBarView.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
 		BE331D3E268B6966000A8D6C = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +115,7 @@
 		BE331D49268B6966000A8D6C /* Advocates App */ = {
 			isa = PBXGroup;
 			children = (
+				BE2428752696340D00929108 /* SearchBar */,
 				BE331D59268B6993000A8D6C /* Proxy Classes */,
 				BE331D4A268B6966000A8D6C /* AdvocatesApp.swift */,
 				BE331D4C268B6966000A8D6C /* ContentView.swift */,
@@ -190,7 +199,7 @@
 			);
 			name = "Advocates App";
 			packageProductDependencies = (
-				BE331D7C268B6A55000A8D6C /* FioriSwiftUI */,
+				BE7FB7032696333800F6DB2B /* FioriSwiftUI */,
 			);
 			productName = "Advocates App";
 			productReference = BE331D47268B6966000A8D6C /* Advocates App.app */;
@@ -220,7 +229,7 @@
 			);
 			mainGroup = BE331D3E268B6966000A8D6C;
 			packageReferences = (
-				BE331D7B268B6A55000A8D6C /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */,
+				BE7FB7022696333800F6DB2B /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */,
 			);
 			productRefGroup = BE331D48268B6966000A8D6C /* Products */;
 			projectDirPath = "";
@@ -263,6 +272,7 @@
 				BE2B5563268F7884006FC710 /* AdvocatesDetailView.swift in Sources */,
 				BE331D6B268B6993000A8D6C /* advocatesServiceMetadataParser.swift in Sources */,
 				BE331D71268B6993000A8D6C /* advocatesServiceMetadata.swift in Sources */,
+				BE2428772696342600929108 /* SearchBarView.swift in Sources */,
 				BE331D6E268B6993000A8D6C /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -454,20 +464,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BE331D7B268B6A55000A8D6C /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */ = {
+		BE7FB7022696333800F6DB2B /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SAP/cloud-sdk-ios-fiori";
+			repositoryURL = "https://github.com/SAP/cloud-sdk-ios-fiori.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BE331D7C268B6A55000A8D6C /* FioriSwiftUI */ = {
+		BE7FB7032696333800F6DB2B /* FioriSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BE331D7B268B6A55000A8D6C /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */;
+			package = BE7FB7022696333800F6DB2B /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */;
 			productName = FioriSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */

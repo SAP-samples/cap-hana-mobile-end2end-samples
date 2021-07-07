@@ -11,11 +11,17 @@ import FioriSwiftUICore
 struct ContentView: View {
     
     @EnvironmentObject var dataModel: DataModel
+    @State private var searchText = ""
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(dataModel.advocates) { advocate in
+            VStack {
+                SearchBarView(searchText: $searchText)
+                    .padding(.top, 10)
+                
+                List(dataModel.advocates.filter({
+                    searchText.isEmpty ? true : $0.firstName!.contains(searchText) || $0.lastName!.contains(searchText) || $0.focusArea!.contains(searchText)
+                })) { advocate in
                     // Model-based initializer
                     NavigationLink(destination: AdvocatesDetailView(advocate: advocate)) {
                         ObjectItem(model: advocate)
@@ -33,7 +39,9 @@ struct ContentView: View {
                         //                    }
                     }
                 }
-            }.navigationTitle("Advocates App")
+                .listStyle(GroupedListStyle())
+                .navigationTitle("Advocates")
+            }
         }
     }
 }
