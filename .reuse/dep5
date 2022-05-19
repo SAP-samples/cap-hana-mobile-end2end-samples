@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: advocates-end2end-sample
+Upstream-Name: cap-hana-mobile-end2end-samples
 Upstream-Contact: kevin.muessig@sap.com
 Source: https://github.com/sap-samples/advocates-end2end-sample
 Disclaimer: The code in this project may include calls to APIs (“API Calls”) of
