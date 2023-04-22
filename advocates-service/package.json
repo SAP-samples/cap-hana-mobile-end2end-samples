@@ -32,7 +32,7 @@
     }
   },
   "devDependencies": {
-    "@sap/hdi-deploy": "^4.0.4",
+    "@sap/hdi-deploy": "^4.6.0",
     "@sap/ux-specification": "^1.84.7"
   }
 }
